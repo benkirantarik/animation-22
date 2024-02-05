@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    filter: url(#wavy);
+    background: black;
+}
+
+svg{
+    height: 0;
+    width: 0;
+}
+
+
+.flag img{
+    position: relative;
+    max-width: 600px;
+    z-index: 100;
+}
+
+.flag{
+    box-shadow: 0 0 20px 4px #fff;
+    animation: animate 30s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        box-shadow: 0 0 20px 4px #fff;
+    }
+
+    15%{
+        box-shadow: 0 0 20px 4px #0A7200;
+    }
+    
+    30%{
+        box-shadow: 0 0 20px 4px #fff;
+    }
+
+    45%{
+        box-shadow: 0 0 20px 4px #EB0013;
+    }
+
+    60%{
+        box-shadow: 0 0 20px 4px #fff;
+    }
+
+    75%{
+        box-shadow: 0 0 20px 4px #0A7200;
+    }
+    
+    90%{
+        box-shadow: 0 0 20px 4px #fff;
+    }
+    
+    100%{
+        box-shadow: 0 0 20px 4px #EB0013;
+    }
+
+}
